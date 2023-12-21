@@ -1,0 +1,18 @@
+﻿@model MovieStoreMvc.Models.Domain.Movie
+@{
+}
+<div class="movie-detail w-60 m-auto"  style="display: flex; justify-content:center;>
+    <div class="img-container">
+        <img style="width: 40%;" alt="image" src="/Uploads/@Model.MovieImage">
+    </div>
+
+    <div class="detail-container" style="text-align:center;">
+        <h3 style="font-size: 2rem;">@Model.Title</h3>
+        <h4 style="font-size: 1.5rem;"  >@Model.GenreNames</h4>
+        <h4 style="font-size: 1.5rem;">@Model.ReleaseYear</h4>
+        <h4 style="font-size: 1.5rem;">Cast : @Model.Cast</h4>
+        <h4 style="font-size: 1.5rem;">Director : @Model.Director</h4>
+        </div>
+        <a href="/Home/Index" style="width:40p; background-color: #607274; color:white; border-radius: 10px; padding: 10px 15px; margin: 10px">Back</a>
+    
+</div>
